@@ -1,15 +1,29 @@
 $( document ).ready(function () {
-    // $("section.link_url .item-user .item_content").slice(0, 12).show();
-    // if ($("section.link_url .item-user .item_content:hidden").length != 0) {
-    //     $(".see-more").show();
-    // }
-    // $(".see-more").on('click', function (e) {
-    //     e.preventDefault();
-    //     $("section.link_url .item-user .item_content:hidden").slice(0, 6).slideDown();
-    //     if ($("section.link_url .item-user .item_content:hidden").length == 0) {
-    //         $(".see-more").fadeOut('slow');
-    //     }
-    // });
+    $(".list_video_related .item_related .item").slice(0, 9).show();
+    if ($(".list_video_related .item_related .item:hidden").length != 0) {
+        $(".see-more").show();
+    }else{
+        $(".see-more").hide();
+    }
+    $(".see-more").on("click", function(e){
+        e.preventDefault();
+        $(".list_video_related .item_related .item:hidden").slice(0, 6).slideDown();
+        if($(".list_video_related .item_related .item:hidden").length == 0) {
+            $(".see-more").fadeOut('slow');
+        }
+    });
+    $('.video_detail .user_profile .copy_video_link .copy_link i').click(function() {
+        var linkValue = $('.user_profile .copy_video_link .copy_link .link>span').text();
+
+        // Sao chép nội dung vào bộ nhớ tạm
+        navigator.clipboard.writeText(linkValue)
+            .then(function() {
+                alert('Đã sao chép đường liên kết vào bộ nhớ tạm.');
+            })
+            .catch(function() {
+                alert('Không thể sao chép đường liên kết vào bộ nhớ tạm.');
+            });
+    });
     // Lấy giá trị của các phần tử h1
     var followers1 = parseInt($('.follower_1').text().replace(/,/g, ''));
     var followers2 = parseInt($('.follower_2').text().replace(/,/g, ''));
@@ -72,6 +86,11 @@ $( document ).ready(function () {
             $('#compareUser .search-select .search .txt_search').appendTo('#txt_search');
         }
     }
+    $('section.introduce .content_introduce .what_about').click(function() {
+        var $this = $(this).find('i');
+        $this.toggleClass('fa-plus fa-minus');
+        $this.parent().next().slideToggle();
+    });
 
 //end
     $('.rectangle_serach').click(function(e){

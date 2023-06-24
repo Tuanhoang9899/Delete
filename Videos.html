@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Details</title>
+    <title>Video Counter</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -61,68 +61,44 @@
     </div>
 </header>
 <main>
-    <section id="user_Details">
+    <section id="topVideos">
         <div class="container">
-            <section class="home-slider">
-                <div class="home-slider-main">
-                    <a href="" class="img_contact">
-                        <img src="img/img.png" alt="">
-                    </a>
-                    <div class="txt_1">
-                        <p class="home-slider_name">Khabane lame</p>
-                        <span class="link_contact"><a href="">@khaby.lame</a><i class="fas fa-check-circle"></i></span>
-                    </div>
-                </div>
-            </section>
-            <div class="social">
-                <div class="watching social-item">
-                    <div class="sl-watching">
-                        <span>75</span>
-                        <div class="watching_icon">
-                            <i class="fas fa-user"></i><span>Following</span>
+            <div class="topUser_introduce">
+                <div class="content_introduce">
+                    <div class="what_about">
+                        <div class="title">
+                            <h3 class="title_what">
+                                Removed Videos List
+                            </h3>
+                        </div>
+                        <div class="content_what">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </p>
                         </div>
                     </div>
+
                 </div>
-                <div class="video social-item">
-                    <span>1,084</span>
-                    <div class="video-icon">
-                        <i class="fas fa-user-friends"></i><span>Videos</span>
-                    </div>
+            </div>
+            <div class="click_choose_video">
+                <div class="last_video">
+                    <span class="click">Latest</span>
                 </div>
-                <div class="like social-item">
-                    <span>2,439,512,860</span>
-                    <div class="like-icon">
-                        <i class="fas fa-heart"></i><span>Like</span>
-                    </div>
+                <div class="random_video">
+                    <span class="click">Random</span>
                 </div>
+                <div class="reload_video">
+                    <span class="load"><i class="fas fa-redo"></i></span>
+                </div>
+
             </div>
             <div class="related_video">
                 <div class="list_video_related">
-                    <h2 class="title_video_related"> Removed videos by @Khaby.lame</h2>
                     <div class="item_related">
                         <div class="item col-xs-12 col-md-12 col-lg-4 col-md-4">
                             <a href="video_detail.html">
-                            <div class="video">
-                                <img src="img/img_video.png" alt="anh_video">
-                            </div>
-                            </a>
-                        </div>
-                        <div class="item col-xs-12 col-md-12 col-lg-4 col-md-4">
-                            <a href="video_detail.html">
-                                <div class="video">
-                                    <img src="img/img_video.png" alt="anh_video">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col-xs-12 col-md-12 col-lg-4 col-md-4">
-                            <a href="video_detail.html">
-                                <div class="video">
-                                    <img src="img/img_video.png" alt="anh_video">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item col-xs-12 col-md-12 col-lg-4 col-md-4">
-                            <a href="video_detail.html">
                                 <div class="video">
                                     <img src="img/img_video.png" alt="anh_video">
                                 </div>
@@ -227,72 +203,28 @@
                             </a>
                         </div>
                     </div>
-                    <div class="more">
-                        <a href="topUser.html">
-                            <div class="see-more">
-                                <p>See more videos</p>
-                            </div>
+                </div>
+                <div class="paginator">
+                    <div class="page_number">
+                        <a href="#">
+                            <span><</span>
                         </a>
+                    </div>
+                    <div class="page_number active">
+                        <a href="#">
+                            <span class="active">1</span>
+                        </a>
+                    </div>
+                    <div class="page_number">
+                        <a href="#">
+                            <span>></span>
+                        </a>
+                    </div>
+                    <div class="reload_video">
+                        <span class="load"><i class="fas fa-redo"></i></span>
                     </div>
                 </div>
             </div>
-
-            <div class="link_url">
-                <div class="title_user-top">
-                    <h2 class="title_user_related"> Explore recommended users</h2>
-                </div>
-                <div class="item-user">
-                    <div class="item_content">
-                        <a href="userDetails.html">
-                        <div class="content-item-search">
-                            <img class="img-item-search" src="img/img.png" alt="">
-                            <div class="conten-item-search-right">
-                                <strong>@khaby.lame <i class="fas fa-check-circle"></i></strong>
-                                <p>Khabane lame</p>
-                                <p>159,602,875 Followers</p>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="item_content">
-                        <a href="userDetails.html">
-                            <div class="content-item-search">
-                                <img class="img-item-search" src="img/img.png" alt="">
-                                <div class="conten-item-search-right">
-                                    <strong>@khaby.lame <i class="fas fa-check-circle"></i></strong>
-                                    <p>Khabane lame</p>
-                                    <p>159,602,875 Followers</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item_content">
-                        <a href="userDetails.html">
-                            <div class="content-item-search">
-                                <img class="img-item-search" src="img/img.png" alt="">
-                                <div class="conten-item-search-right">
-                                    <strong>@khaby.lame <i class="fas fa-check-circle"></i></strong>
-                                    <p>Khabane lame</p>
-                                    <p>159,602,875 Followers</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item_content">
-                        <a href="userDetails.html">
-                            <div class="content-item-search">
-                                <img class="img-item-search" src="img/img.png" alt="">
-                                <div class="conten-item-search-right">
-                                    <strong>@khaby.lame <i class="fas fa-check-circle"></i></strong>
-                                    <p>Khabane lame</p>
-                                    <p>159,602,875 Followers</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 </main>
