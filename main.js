@@ -12,6 +12,7 @@ $( document ).ready(function () {
             $(".see-more").fadeOut('slow');
         }
     });
+
     $('.video_detail .user_profile .copy_video_link .copy_link i').click(function() {
         var linkValue = $('.user_profile .copy_video_link .copy_link .link>span').text();
 
@@ -48,24 +49,24 @@ $( document ).ready(function () {
     $('.social-item span.total_follower').text(sumFlower.toLocaleString());
     $('.social-item span.total_like_gap').text(sumLike.toLocaleString());
 //end
-    // compareUser lấy user
-
-    $('.item_search_content_1').click(function() {
-        // Lấy thẻ div đích mà bạn muốn chuyển vào
-        var destinationDiv = $('#compareUser .item_search_content.user_1');
-
-        // Di chuyển thẻ div với class 'item_search_content' vào thẻ div đích
-        $(this).appendTo(destinationDiv);
-        $('.list_search_mobile_1').hide();
-    });
-    $('.item_search_content_2').click(function() {
-        // Lấy thẻ div đích mà bạn muốn chuyển vào
-        var destinationDiv = $('#compareUser .item_search_content.user_2');
-
-        // Di chuyển thẻ div với class 'item_search_content' vào thẻ div đích
-        $(this).appendTo(destinationDiv);
-        $('.list_search_mobile_2').hide();
-    });
+//     // compareUser lấy user
+//
+//     $('.item_search_content_1').click(function() {
+//         // Lấy thẻ div đích mà bạn muốn chuyển vào
+//         var destinationDiv = $('#compareUser .item_search_content.user_1');
+//
+//         // Di chuyển thẻ div với class 'item_search_content' vào thẻ div đích
+//         $(this).appendTo(destinationDiv);
+//         $('.list_search_mobile_1').hide();
+//     });
+//     $('.item_search_content_2').click(function() {
+//         // Lấy thẻ div đích mà bạn muốn chuyển vào
+//         var destinationDiv = $('#compareUser .item_search_content.user_2');
+//
+//         // Di chuyển thẻ div với class 'item_search_content' vào thẻ div đích
+//         $(this).appendTo(destinationDiv);
+//         $('.list_search_mobile_2').hide();
+//     });
 
 // Kiểm tra kích thước màn hình ban đầu và chuyển vị trí các thẻ div
     checkScreenWidth();
@@ -157,7 +158,7 @@ function myFunction() {
     }
 
 }
-function myFunctionRight() {
+function myFunctionTop() {
     var input = $(".search-txt_right");
     var filter = input.val().toUpperCase();
     var ul = $(".item-search");
