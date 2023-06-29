@@ -562,7 +562,11 @@ section.introduce .content_introduce .what_about{
   background: var(--primary-button-hover);
 }
 .topUser_introduce{
-  border: 1px solid var(--primary-background-wall);
+  border-radius: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #7000FF, #51C671) 1;
+  border-image-slice: 1;
+  /*border: 1px solid var(--primary-background-wall);*/
   border-radius: 10px;
   padding: 41px 50px;
   cursor: pointer;
